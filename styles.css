@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	background-color: #E3F1EB;
+}
+
+.header {
+  width: 515px;
+  height: 178px;
+  padding: 10px;
+  margin: 0 auto 4px auto;
+  display: block;
+  text-align: center;
+  font-size: 55px;
+  color: #4d4d4d;
+  background: #ffffff url(images/floralheader.png) center center no-repeat;
+}
+
+p{
+  text-align: center;
+  font-size: 55px;
+  font-color: #ffffff;
+}
+
+.content {
+  padding: 10px;
+  width: 515px;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.tweetButton {
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  background: #F7B2AB;
+  padding: 5px 50px 5px 50px;
+  text-decoration: none;
+}
+
+.tweetButton:hover {
+  background: #EB8588;
+  text-decoration: none;
+}
