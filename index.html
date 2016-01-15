@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Twittler x Kathybeatz</title>
+    <script src="moment.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
@@ -14,10 +15,33 @@
     </div>
 
     <div class='content'>
+      <button class="tweetButton">More Tweets</button>
       <section>
       </section>
-      <button class="tweetButton">More Tweets</button>
+      
     </div>
+
+    <script>
+      $(document).ready(function(){
+
+
+          var $body = $('section');
+          $body.html('');
+          var index = streams.home.length - 1;
+          while(index >= 0){
+            var tweet = streams.home[index];
+            var $tweet = $('<div class="streamTweets"></div>');
+            $tweet.text(tweet.user + ": " + tweet.message + ' ('+ tweet.created_at + ') ');
+            $tweet.appendTo($body);
+            index -= 1;
+          }
+          $("button").on("click", function(){
+            location.reload();
+        
+          });
+
+      });
+    </script>
 
   
 

@@ -16,6 +16,7 @@ body {
   text-align: center;
   font-size: 55px;
   color: #4d4d4d;
+  text-shadow: 2px 0 0 #ffffff, -2px 0 0 #ffffff, 0 2px 0 #ffffff, 0 -2px 0 #ffffff, 1px 1px #ffffff, -1px;
   background: #ffffff url(images/floralheader.png) center center no-repeat;
 }
 
@@ -28,7 +29,6 @@ p{
 .content {
   padding: 10px;
   width: 515px;
-  height: 400px;
   margin: 0 auto;
   text-align: center;
   background-color: #ffffff;
@@ -43,9 +43,25 @@ p{
   background: #F7B2AB;
   padding: 5px 50px 5px 50px;
   text-decoration: none;
+  margin-bottom: 8px;
+
 }
 
 .tweetButton:hover {
   background: #EB8588;
   text-decoration: none;
+}
+
+.streamTweets {
+    text-align: left;
+    display: block;
+    color: #4d4d4d;
+    margin: 2px auto 0px auto;
+    border: 1px solid #B5CFC4;
+    padding: 0px 2px 0px 8px;
+}
+
+.section{
+    display: block;
+    overflow-y: none;
 }

@@ -42,13 +42,15 @@ var generateRandomTweet = function(){
   var tweet = {};
   tweet.user = randomElement(users);
   tweet.message = randomMessage();
-  tweet.created_at = new Date();
+  tweet.created_at = moment().startOf('hour').fromNow();
   addTweet(tweet);
 };
 
-for(var i = 0; i < 10; i++){
+for(var i = 0; i < 14; i++){
   generateRandomTweet();
 }
+
+
 
 var scheduleNextTweet = function(){
   generateRandomTweet();
@@ -67,3 +69,5 @@ var writeTweet = function(message){
   tweet.message = message;
   addTweet(tweet);
 };
+
+console.log("streams", streams.home);
